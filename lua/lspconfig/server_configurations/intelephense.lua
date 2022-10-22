@@ -18,6 +18,9 @@ return {
       -- prefer cwd if root is a descendant
       return util.path.is_descendant(cwd, root) and cwd or root
     end,
+    init_options = {
+        globalStoragePath = "/tmp"
+      },
   },
   docs = {
     description = [[
